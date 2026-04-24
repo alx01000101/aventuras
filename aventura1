@@ -1,0 +1,80 @@
+# parte 1
+while True:
+    d1 = input("Suena la alarma. ¿Te levantas o sigues dormido? (levantar/dormir): ")
+
+    if d1 == "levantar":
+        print("Te levantaste como pudiste y vas camino a la universidad.")
+
+        d2 = input("En el camino ves una cafetería. ¿Entras o sigues derecho? (entrar/seguir): ")
+
+        if d2 == "entrar":
+            print("Compraste un café y ahora estás más despierto. Llegas con energía a clase.")
+        elif d2 == "seguir":
+            print("Llegas a clase pero estás medio zombie y te cuesta concentrarte.")
+        else:
+            print("Esa no es una opción válida.")
+
+        break
+
+    elif d1 == "dormir":
+        print("Te quedaste dormido y saliste corriendo porque ibas tarde.")
+
+        d3 = input("Entras al salón tarde. ¿Inventas una excusa o dices la verdad? (excusa/verdad): ")
+
+        if d3 == "excusa":
+            print("El profe no te cree y te baja puntos.")
+        elif d3 == "verdad":
+            print("El profe aprecia tu honestidad y solo te advierte.")
+        else:
+            print("Esa no es una opción válida.")
+
+        break
+
+    else:
+        print("Esa no es una opción válida.")
+
+
+
+
+# parte 2
+while True:
+    d4 = input("El profesor anuncia un examen sorpresa. ¿Te quedas o intentas escapar? (quedar/escapar): ")
+
+    if d4 == "quedar":
+        print("Decides quedarte y enfrentar el examen.")
+
+        d5 = input("El examen es difícil. ¿Te concentras o te rindes? (concentrar/rendir): ")
+
+        if d5 == "concentrar":
+            print("Te concentraste y lograste responder la mayoría de las preguntas.")
+            print("Aprobaste el examen.")
+            print("FINAL BUENO")
+        elif d5 == "rendir":
+            print("Te rendiste y entregaste el examen incompleto.")
+            print("Reprobaste el examen.")
+            print("FINAL MALO")
+        else:
+            print("Esa no es una opción válida.")
+
+        break
+
+    elif d4 == "escapar":
+        print("Intentas escapar del examen.")
+
+        d6 = input("El profesor te ve. ¿Regresas o sigues corriendo? (regresar/correr): ")
+
+        if d6 == "regresar":
+            print("Regresas al salón y el profesor te deja hacer el examen.")
+            print("No te fue muy bien, pero lograste pasar.")
+            print("FINAL NEUTRO")
+        elif d6 == "correr":
+            print("Seguiste corriendo y perdiste el examen.")
+            print("Reprobaste la materia.")
+            print("FINAL MALO")
+        else:
+            print("Esa no es una opción válida.")
+
+        break
+
+    else:
+        print("Esa no es una opción válida.")
